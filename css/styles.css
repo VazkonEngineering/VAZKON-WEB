@@ -691,7 +691,7 @@ ul, ol {
 .hero__image {
     position: absolute;
     inset: 0;
-    background-image: url('../VAZKON_PORTADA.png');
+    background-image: url('../VAZKON_PORTADA.webp');
     background-size: cover;
     background-position: center 60%;
     filter: grayscale(30%);
