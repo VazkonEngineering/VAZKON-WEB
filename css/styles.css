@@ -2204,6 +2204,48 @@ a.contact__value:hover {
     color: var(--color-white);
 }
 
+/* === WHATSAPP FLOTANTE === */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+@media (min-width: 768px) {
+    .whatsapp-float {
+        bottom: 2.5rem;
+        right: 2.5rem;
+        width: 64px;
+        height: 64px;
+    }
+
+    .whatsapp-float svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 /* === ANIMATIONS === */
 .reveal-up {
     opacity: 0;
