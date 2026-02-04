@@ -16,7 +16,7 @@
             loader.classList.add('hidden');
             document.body.classList.remove('no-scroll');
             initAnimations();
-        }, 900);
+        }, 400);
     });
 
     // ==========================================

@@ -850,47 +850,6 @@ ul, ol {
     animation: fadeUp 0.8s var(--ease-out-expo) 1s forwards;
 }
 
-.hero__scroll {
-    position: absolute;
-    bottom: var(--space-3xl);
-    right: var(--space-xl);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-md);
-}
-
-.scroll__mouse {
-    width: 24px;
-    height: 40px;
-    border: 1px solid var(--color-gray-600);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    padding-top: 8px;
-}
-
-.scroll__wheel {
-    width: 3px;
-    height: 8px;
-    background-color: var(--color-gray-400);
-    border-radius: 2px;
-    animation: scrollWheel 2s ease-in-out infinite;
-}
-
-@keyframes scrollWheel {
-    0%, 100% { opacity: 1; transform: translateY(0); }
-    50% { opacity: 0.3; transform: translateY(6px); }
-}
-
-.scroll__text {
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--color-gray-600);
-    writing-mode: vertical-rl;
-}
-
 /* === METRICS STRIP === */
 .metrics-strip {
     background-color: var(--color-black);
