@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VAZKON - Ingeniería especializada en geosintéticos e infraestructura hidráulica. Soluciones técnicas con control total del sistema.">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>VAZKON | Ingeniería en Geosintéticos e Infraestructura Técnica</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <div class="loader__logo">VAZKON</div>
+            <div class="loader__bar">
+                <div class="loader__progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor personalizado -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                <svg class="logo__icon" viewBox="0 0 48 48" fill="none">
+                    <!-- Círculo exterior -->
+                    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                    <!-- V geométrica -->
+                    <path d="M14 12L24 34L34 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                <div class="logo__brand">
+                    <span class="logo__text">VAZKON</span>
+                    <span class="logo__subtext">ENGINEERING</span>
+                </div>
+            </a>
+
+            <nav class="header__nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#expertise" class="nav__link" data-text="Expertise">Expertise</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#soluciones" class="nav__link" data-text="Soluciones">Soluciones</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#proyectos" class="nav__link" data-text="Proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#empresa" class="nav__link" data-text="Empresa">Empresa</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#contacto" class="header__cta">
+                    <span>Contacto</span>
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </a>
+
+                <button class="header__toggle" id="navToggle" aria-label="Menú">
+                    <span class="toggle__line"></span>
+                    <span class="toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <nav class="mobile-menu__nav">
+                <a href="#expertise" class="mobile-menu__link">
+                    <span class="mobile-menu__number">01</span>
+                    <span class="mobile-menu__text">Expertise</span>
+                </a>
+                <a href="#soluciones" class="mobile-menu__link">
+                    <span class="mobile-menu__number">02</span>
+                    <span class="mobile-menu__text">Soluciones</span>
+                </a>
+                <a href="#proyectos" class="mobile-menu__link">
+                    <span class="mobile-menu__number">03</span>
+                    <span class="mobile-menu__text">Proyectos</span>
+                </a>
+                <a href="#empresa" class="mobile-menu__link">
+                    <span class="mobile-menu__number">04</span>
+                    <span class="mobile-menu__text">Empresa</span>
+                </a>
+                <a href="#contacto" class="mobile-menu__link">
+                    <span class="mobile-menu__number">05</span>
+                    <span class="mobile-menu__text">Contacto</span>
+                </a>
+            </nav>
+            <div class="mobile-menu__footer">
+                <a href="mailto:contacto@vazkon.mx">contacto@vazkon.mx</a>
+                <span>Monterrey, MX</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__image"></div>
+            <div class="hero__gradient"></div>
+            <div class="hero__grid"></div>
+            <div class="hero__noise"></div>
+        </div>
+
+        <div class="hero__content">
+            <div class="hero__tag">
+                <span class="tag__line"></span>
+                <span class="tag__text">Ingeniería Especializada</span>
+            </div>
+
+            <h1 class="hero__title">
+                <span class="title__line">
+                    <span class="title__word" data-delay="0">Soluciones</span>
+                </span>
+                <span class="title__line">
+                    <span class="title__word" data-delay="1">que perduran</span>
+                </span>
+            </h1>
+
+            <div class="hero__bottom">
+                <p class="hero__description">
+                    
+                </p>
+
+                <div class="hero__ctas">
+                    <a href="#proyectos" class="btn btn--primary">
+                        <span class="btn__text">Explorar proyectos</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#expertise" class="btn btn--ghost">
+                        <span class="btn__text">Conocer más</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <div class="scroll__mouse">
+                <div class="scroll__wheel"></div>
+            </div>
+            <span class="scroll__text">Scroll</span>
+        </div>
+
+    </section>
+
+    <!-- Métricas Strip -->
+    <div class="metrics-strip">
+        <div class="container">
+            <div class="metrics-strip__grid">
+                <div class="metric">
+                    <span class="metric__value">+150K</span>
+                    <span class="metric__label">m² instalados</span>
+                </div>
+                <div class="metric">
+                    <span class="metric__value">+95</span>
+                    <span class="metric__label">proyectos</span>
+                </div>
+                <div class="metric">
+                    <span class="metric__value">3</span>
+                    <span class="metric__label">años</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expertise -->
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="expertise__header">
+                <div class="section-label">
+                    <span class="section-label__number">01</span>
+                    <span class="section-label__line"></span>
+                    <span class="section-label__text">Expertise</span>
+                </div>
+                <h2 class="expertise__title reveal-text">
+                    Ingeniería con<br>
+                    <span class="text--accent">fundamento técnico</span>
+                </h2>
+            </div>
+
+            <div class="expertise__grid">
+                <div class="expertise__intro reveal-up">
+                    <p class="text--large">
+                        Diseñamos infraestructura que responde a las condiciones reales del terreno y el agua, con soluciones calculadas para décadas de operación.
+                    </p>
+                </div>
+
+                <div class="expertise__visual">
+                    <div class="visual__frame reveal-scale">
+                        <img src="Im%C3%A1genes/Expertise/R11.png" alt="Infraestructura hidráulica" class="visual__image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="capabilities">
+                <article class="capability reveal-up" data-delay="0">
+                    <div class="capability__icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M32 16V32L44 44" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="capability__content">
+                        <h3 class="capability__title">Control Total</h3>
+                        <p class="capability__text">
+                            Control técnico directo desde el diseño hasta la ejecución, asegurando el desempeño hidráulico del sistema.
+                        </p>
+                    </div>
+                    <span class="capability__number">01</span>
+                </article>
+
+                <article class="capability reveal-up" data-delay="1">
+                    <div class="capability__icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="12" y="12" width="40" height="40" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 32H52M32 12V52" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="capability__content">
+                        <h3 class="capability__title">Criterio Técnico</h3>
+                        <p class="capability__text">
+                            Cada decisión se sustenta en análisis técnico verificable.
+Diseñamos soluciones específicas para cada proyecto.
+                        </p>
+                    </div>
+                    <span class="capability__number">02</span>
+                </article>
+
+                <article class="capability reveal-up" data-delay="2">
+                    <div class="capability__icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <path d="M32 8L56 20V44L32 56L8 44V20L32 8Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M32 8V32M56 20L32 32M8 20L32 32" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="capability__content">
+                        <h3 class="capability__title">Durabilidad Proyectada</h3>
+                        <p class="capability__text">
+                            Sistemas diseñados para décadas de operación, bajo criterios de durabilidad y desempeño.
+                        </p>
+                    </div>
+                    <span class="capability__number">03</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluciones -->
+    <section class="solutions" id="soluciones">
+        <div class="solutions__header">
+            <div class="container">
+                <div class="section-label section-label--light">
+                    <span class="section-label__number">02</span>
+                    <span class="section-label__line"></span>
+                    <span class="section-label__text">Soluciones</span>
+                </div>
+                <h2 class="solutions__title reveal-text">
+                    Áreas de<br>especialización
+                </h2>
+            </div>
+        </div>
+
+        <div class="solutions__grid">
+            <!-- Geosintéticos -->
+            <article class="solution">
+                <div class="solution__image">
+                    <img src="RESERVORIO_1.png" alt="Geomembrana HDPE - Instalación en laguna" class="solution__img">
+                    <div class="solution__overlay"></div>
+                </div>
+                <div class="solution__content">
+                    <span class="solution__number">01</span>
+                    <h3 class="solution__title">Geosintéticos</h3>
+                    <p class="solution__description">
+                        Sistemas de impermeabilización, refuerzo y contención con geomembranas,
+                        geotextiles y geocompuestos de alta ingeniería.
+                    </p>
+                    <ul class="solution__features">
+                        <li>Geomembranas HDPE</li>
+                        <li>Geotextiles PP/PET</li>
+                        <li>Sistemas de detección de fugas</li>
+                        <li>Instalación y mantenimiento de geosintéticos</li>
+                        <li>Certificación de instalación</li>
+                    </ul>
+                    <a href="#contacto" class="solution__link">
+                        <span>Consultar</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Infraestructura Hidráulica -->
+            <article class="solution">
+                <div class="solution__image">
+                    <img src="CANAL_2.png" alt="Canal revestido - Sistema de conducción" class="solution__img">
+                    <div class="solution__overlay"></div>
+                </div>
+                <div class="solution__content">
+                    <span class="solution__number">02</span>
+                    <h3 class="solution__title">Infraestructura Hidráulica</h3>
+                    <p class="solution__description">
+                        Obras de captación, conducción, almacenamiento y tratamiento
+                        proyectadas para operación continua y vida útil extendida.
+                    </p>
+                    <ul class="solution__features">
+                        <li>Reservorios y qochas</li>
+                        <li>Canales revestidos</li>
+                        <li>Sistemas de drenaje</li>
+                        <li>Tratamiento de aguas</li>
+                        <li>Rellenos sanitarios</li>
+                    </ul>
+                    <a href="#contacto" class="solution__link">
+                        <span>Consultar</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Consultoría Técnica -->
+            <article class="solution">
+                <div class="solution__image">
+                    <img src="CONSULTORÍA_1.png" alt="Análisis técnico - Supervisión especializada" class="solution__img">
+                    <div class="solution__overlay"></div>
+                </div>
+                <div class="solution__content">
+                    <span class="solution__number">03</span>
+                    <h3 class="solution__title">Consultoría Técnica</h3>
+                    <p class="solution__description">
+                        Análisis, diseño y supervisión para proyectos que requieren
+                        criterio ingenieril especializado.
+                    </p>
+                    <ul class="solution__features">
+                        <li>Diseño de sistemas</li>
+                        <li>Especificaciones técnicas</li>
+                        <li>Supervisión de instalación</li>
+                        <li>Diagnósticos técnicos y peritajes</li>
+                        <li>Auditorías técnicas y control de calidad (QA/QC)</li>
+                    </ul>
+                    <a href="#contacto" class="solution__link">
+                        <span>Consultar</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <div class="projects__header">
+                <div class="section-label">
+                    <span class="section-label__number">03</span>
+                    <span class="section-label__line"></span>
+                    <span class="section-label__text">Proyectos</span>
+                </div>
+                <div class="projects__heading">
+                    <h2 class="projects__title reveal-text">
+                        Complejidad<br>resuelta
+                    </h2>
+                    <p class="projects__subtitle reveal-up">
+                       Proyectos ejecutados a más de 4,000 msnm. Ingeniería que responde a las condiciones más exigentes del país.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projects__showcase">
+                <!-- Proyecto 1 -->
+                <article class="project reveal-up">
+                    <div class="project__image project__slideshow">
+                        <img src="Imágenes/Reservorios para riego/R1.png" alt="Reservorio para riego 1" class="project__slide project__slide--active">
+                        <img src="Imágenes/Reservorios para riego/R2.png" alt="Reservorio para riego 2" class="project__slide">
+                        <img src="Imágenes/Reservorios para riego/R3.png" alt="Reservorio para riego 3" class="project__slide">
+                        <img src="Imágenes/Reservorios para riego/R4.png" alt="Reservorio para riego 4" class="project__slide">
+                        <img src="Imágenes/Reservorios para riego/R5.png" alt="Reservorio para riego 5" class="project__slide">
+                        <div class="project__tags">
+                            <span class="project__tag">Geosintéticos</span>
+                            <span class="project__tag">Agricultura</span>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__meta">
+                            <span class="project__location">Huancavelica, Perú</span>
+                            <span class="project__year">2024</span>
+                        </div>
+                        <h3 class="project__title">Reservorios para Riego</h3>
+                        <p class="project__excerpt">
+                            Sistema de impermeabilización con geomembrana HDPE y Geotextil No Tejido para riego. Diseñados para +25 años de vida útil.
+                        </p>
+                        <div class="project__stats">
+                            <div class="project__stat">
+                                <span class="stat__value">+90,000</span>
+                                <span class="stat__unit">m²</span>
+                            </div>
+                            <div class="project__stat">
+                                <span class="stat__value">300,000</span>
+                                <span class="stat__unit">m3</span>
+                            </div>
+                            <div class="project__stat">
+                                <span class="stat__value">100%</span>
+                                <span class="stat__unit">probado</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project reveal-up">
+                    <div class="project__image project__slideshow">
+                        <img src="Imágenes/Qochas/Qocha 1.png" alt="Qocha 1" class="project__slide project__slide--active">
+                        <img src="Imágenes/Qochas/Qocha 2 Cuchuquesera.png" alt="Qocha Cuchuquesera" class="project__slide">
+                        <img src="Imágenes/Qochas/Qocha 3.png" alt="Qocha 3" class="project__slide">
+                        <img src="Imágenes/Qochas/Qocha 5.png" alt="Qocha 5" class="project__slide">
+                        <div class="project__tags">
+                            <span class="project__tag">Especiales</span>
+                            <span class="project__tag">Almacenamiento</span>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__meta">
+                            <span class="project__location">Ayacucho, Perú</span>
+                            <span class="project__year">2025</span>
+                        </div>
+                        <h3 class="project__title">Diques y Qochas de Almacenamiento</h3>
+                        <p class="project__excerpt">
+                            Sistema de impermeabilización con doble barrera (GT - GM -GT) y sistema
+                            de detección de fugas. Cumplimiento normativo NOM-083.
+                        </p>
+                        <div class="project__stats">
+                            <div class="project__stat">
+                                <span class="stat__value">30,000</span>
+                                <span class="stat__unit">m²</span>
+                            </div>
+                            <div class="project__stat">
+                                <span class="stat__value">2Millones </span>
+                                <span class="stat__unit">m3 </span>
+                            </div>
+                            <div class="project__stat">
+                                <span class="stat__value">NOM</span>
+                                <span class="stat__unit">083</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects__footer reveal-up">
+                <a href="#contacto" class="btn btn--outline-dark">
+                    <span class="btn__text">Discutir su proyecto</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empresa -->
+    <section class="company" id="empresa">
+        <div class="company__intro">
+            <div class="container">
+                <div class="section-label section-label--light">
+                    <span class="section-label__number">04</span>
+                    <span class="section-label__line"></span>
+                    <span class="section-label__text">Empresa</span>
+                </div>
+
+                <div class="company__statement">
+                    <h2 class="company__title reveal-text">
+                        La ingeniería bien hecha<br>
+                        <span class="text--muted">se nota desde el primer día,</span>
+                    </h2>
+                    <p class="company__lead reveal-up">
+                        Y se ratifica cuando el sistema sigue funcionando años después.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="company__content">
+            <div class="container">
+                <div class="values">
+                    <div class="value reveal-up" data-delay="0">
+                        <div class="value__header">
+                            <span class="value__number">01</span>
+                            <div class="value__line"></div>
+                        </div>
+                        <h3 class="value__title">Decisiones fundamentadas</h3>
+                        <p class="value__text">
+                            Cada recomendación se sustenta en análisis técnico verificable.
+Actuamos dentro de criterios que pueden ser controlados y validados.
+                        </p>
+                    </div>
+
+                    <div class="value reveal-up" data-delay="1">
+                        <div class="value__header">
+                            <span class="value__number">02</span>
+                            <div class="value__line"></div>
+                        </div>
+                        <h3 class="value__title">Materiales certificados</h3>
+                        <p class="value__text">
+                            Todo insumo cuenta con especificaciones técnicas, origen verificable y certificación.
+                            Mantenemos la trazabilidad completa en cada proyecto.
+                        </p>
+                    </div>
+
+                    <div class="value reveal-up" data-delay="2">
+                        <div class="value__header">
+                            <span class="value__number">03</span>
+                            <div class="value__line"></div>
+                        </div>
+                        <h3 class="value__title">Procedimientos repetibles</h3>
+                        <p class="value__text">
+                           Documentamos procesos para replicar calidad.
+Cada junta es soldada, ensayada y registrada por cuadrillas certificadas bajo procedimientos estandarizados.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="certifications reveal-up">
+                    <h4 class="certifications__title">Respaldo técnico</h4>
+                    <div class="certifications__list">
+                        <div class="certification">
+                            <span class="certification__text">Instaladores certificados GRI / IAGI</span>
+                        </div>
+                        <div class="certification">
+                            <span class="certification__text">Procedimientos ASTM</span>
+                        </div>
+                        <div class="certification">
+                            <span class="certification__text">Equipos calibrados</span>
+                        </div>
+                        <div class="certification">
+                            <span class="certification__text">Documentación técnica completa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-section__bg">
+            <div class="cta-section__gradient"></div>
+        </div>
+        <div class="container">
+            <div class="cta-section__content">
+                <span class="cta-section__label">¿Proyecto en mente?</span>
+                <h2 class="cta-section__title reveal-text">
+                    Hablemos de<br>ingeniería
+                </h2>
+                <p class="cta-section__text reveal-up">
+                    Te Acompañamos desde la evaluación inicial hasta la ejecución. 
+                </p>
+                <a href="#contacto" class="btn btn--white reveal-up">
+                    <span class="btn__text">Iniciar conversación</span>
+                    <span class="btn__icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes -->
+    <section class="clients">
+        <div class="container">
+            <div class="clients__header">
+                <span class="clients__label">Confían en nosotros</span>
+            </div>
+        </div>
+        <div class="clients__marquee">
+            <div class="clients__track">
+                <!-- Logos institucionales -->
+                <div class="client-logo">
+                    <img src="instituciones/MIDAGRI.png" alt="MIDAGRI">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/AGRORURAL.png" alt="AGRORURAL">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/PESCS.jpg" alt="PESCS">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/GORE AYACUCHO.png" alt="Gobierno Regional de Ayacucho">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/GORE HUANCAV.png" alt="Gobierno Regional de Huancavelica">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/CHALLHUAHUACHO.png" alt="Challhuahuacho">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/KIMBIRI.png" alt="Kimbiri">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/VILCAS.png" alt="Vilcas Huamán">
+                </div>
+                <!-- Duplicados para loop infinito -->
+                <div class="client-logo">
+                    <img src="instituciones/MIDAGRI.png" alt="MIDAGRI">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/AGRORURAL.png" alt="AGRORURAL">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/PESCS.jpg" alt="PESCS">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/GORE AYACUCHO.png" alt="Gobierno Regional de Ayacucho">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/GORE HUANCAV.png" alt="Gobierno Regional de Huancavelica">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/CHALLHUAHUACHO.png" alt="Challhuahuacho">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/KIMBIRI.png" alt="Kimbiri">
+                </div>
+                <div class="client-logo">
+                    <img src="instituciones/VILCAS.png" alt="Vilcas Huamán">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <div class="section-label">
+                        <span class="section-label__number">05</span>
+                        <span class="section-label__line"></span>
+                        <span class="section-label__text">Contacto</span>
+                    </div>
+
+                    <h2 class="contact__title reveal-text">
+                        Conversemos sobre<br>su proyecto
+                    </h2>
+
+                    <div class="contact__details reveal-up">
+                        <div class="contact__item">
+                            <span class="contact__label">Email</span>
+                            <a href="mailto:info.hq@vazkon.com" class="contact__value">
+                                info.hq@vazkon.com
+                            </a>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__label">Teléfono</span>
+                            <a href="tel:+51 976603796" class="contact__value">
+                                +51 976 603 796
+                            </a>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__label">Ubicación</span>
+                            <span class="contact__value">
+                                Santiago de Surco, Lima<br>Perú
+                            </span>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__label">Horario</span>
+                            <span class="contact__value">
+                                Lunes a Viernes<br>08:00 am — 07:00 pm
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__form-wrapper reveal-up">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" class="form-input" required>
+                                <span class="form-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="empresa">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" class="form-input">
+                                <span class="form-line"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="form-line"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-input">
+                                <span class="form-line"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Tipo de proyecto</label>
+                            <div class="form-options">
+                                <label class="form-option">
+                                    <input type="radio" name="tipo" value="geosinteticos">
+                                    <span class="option__box"></span>
+                                    <span class="option__text">Geosintéticos</span>
+                                </label>
+                                <label class="form-option">
+                                    <input type="radio" name="tipo" value="hidraulica">
+                                    <span class="option__box"></span>
+                                    <span class="option__text">Hidráulica</span>
+                                </label>
+                                <label class="form-option">
+                                    <input type="radio" name="tipo" value="consultoria">
+                                    <span class="option__box"></span>
+                                    <span class="option__text">Consultoría</span>
+                                </label>
+                                <label class="form-option">
+                                    <input type="radio" name="tipo" value="otro">
+                                    <span class="option__box"></span>
+                                    <span class="option__text">Otro</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="mensaje">Descripción del proyecto</label>
+                            <textarea id="mensaje" name="mensaje" class="form-textarea" rows="4" required></textarea>
+                            <span class="form-line"></span>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            <span class="submit__text">Enviar mensaje</span>
+                            <span class="submit__icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <svg class="logo__icon" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            <path d="M14 12L24 34L34 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                        <div class="logo__brand">
+                            <span class="logo__text">VAZKON</span>
+                            <span class="logo__subtext">ENGINEERING</span>
+                        </div>
+                    </a>
+                    <p class="footer__tagline">
+                        Ingeniería especializada en geosintéticos<br>
+                        e infraestructura hidráulica
+                    </p>
+                </div>
+
+                <div class="footer__nav">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Navegación</h4>
+                        <ul class="footer__list">
+                            <li><a href="#expertise">Expertise</a></li>
+                            <li><a href="#soluciones">Soluciones</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#empresa">Empresa</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Soluciones</h4>
+                        <ul class="footer__list">
+                            <li><a href="#soluciones">Geosintéticos</a></li>
+                            <li><a href="#soluciones">Infraestructura Hidráulica</a></li>
+                            <li><a href="#soluciones">Consultoría Técnica</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Contacto</h4>
+                        <ul class="footer__list">
+                            <li><a href="mailto:contacto@vazkon.com">contacto@vazkon.com</a></li>
+                            <li><a href="tel:+528112345678">+51 976 603 796</a></li>
+                            <li>Santiago de Surco, Lima, Perú</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 VAZKON ENGINEERING. Todos los derechos reservados.</p>
+                <div class="footer__links">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

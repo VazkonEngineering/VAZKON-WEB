@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- Símbolo: V dentro de círculo -->
+  <g class="logo-symbol">
+    <!-- Círculo exterior -->
+    <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    <!-- V geométrica -->
+    <path d="M14 12L24 34L34 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Texto VAZKON -->
+  <g class="logo-text">
+    <text x="56" y="30" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="22" font-weight="600" letter-spacing="0.12em" fill="currentColor">VAZKON</text>
+  </g>
+</svg>
