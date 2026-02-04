@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VAZKON - Ingeniería especializada en geosintéticos e infraestructura hidráulica. Soluciones técnicas con control total del sistema.">
+    <meta name="description" content="Ingeniería especializada en geomembranas, geotextiles, reservorios y qochas. Diseño, instalación y QA/QC para infraestructura hidráulica en Perú.">
     <meta name="theme-color" content="#0a0a0a">
-    <title>VAZKON | Ingeniería en Geosintéticos e Infraestructura Técnica</title>
+    <title>VAZKON | Geosintéticos e Infraestructura Hidráulica en Perú</title>
+
+    <!-- SEO adicional -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="VAZKON ENGINEERING">
+    <meta name="keywords" content="geosintéticos, geomembranas HDPE, geotextiles, reservorios, qochas, infraestructura hidráulica, ingeniería Perú, impermeabilización, canales de riego">
+    <meta name="geo.region" content="PE-LIM">
+    <meta name="geo.placename" content="Lima, Perú">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://vazkon.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="VAZKON | Geosintéticos e Infraestructura Hidráulica en Perú">
+    <meta property="og:description" content="Ingeniería especializada en geomembranas, geotextiles, reservorios y qochas. Diseño, instalación y QA/QC para infraestructura hidráulica en Perú.">
+    <meta property="og:url" content="https://vazkon.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vazkon.com/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="VAZKON ENGINEERING">
+    <meta property="og:locale" content="es_PE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VAZKON | Geosintéticos e Infraestructura Hidráulica en Perú">
+    <meta name="twitter:description" content="Ingeniería especializada en geomembranas, geotextiles, reservorios y qochas. Diseño, instalación y QA/QC para infraestructura hidráulica en Perú.">
+    <meta name="twitter:image" content="https://vazkon.com/og.jpg">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +46,56 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VAZKON ENGINEERING",
+        "url": "https://vazkon.com",
+        "logo": "https://vazkon.com/og.jpg",
+        "description": "Ingeniería especializada en geomembranas, geotextiles, reservorios y qochas. Diseño, instalación y QA/QC para infraestructura hidráulica en Perú.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago de Surco",
+            "addressRegion": "Lima",
+            "addressCountry": "PE"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+51-969-726-233",
+            "email": "gerencia@vazkon.com",
+            "contactType": "sales",
+            "availableLanguage": "Spanish"
+        },
+        "sameAs": []
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "VAZKON ENGINEERING",
+        "image": "https://vazkon.com/og.jpg",
+        "url": "https://vazkon.com",
+        "telephone": "+51-969-726-233",
+        "email": "gerencia@vazkon.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago de Surco",
+            "addressRegion": "Lima",
+            "addressCountry": "PE"
+        },
+        "openingHours": "Mo-Fr 08:00-19:00",
+        "priceRange": "$$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Perú"
+        },
+        "serviceType": ["Geosintéticos", "Infraestructura Hidráulica", "Consultoría Técnica", "Geomembranas HDPE", "Reservorios", "Qochas"]
+    }
+    </script>
 </head>
 <body>
     <!-- Loader -->
@@ -36,7 +113,7 @@
     <div class="cursor-follower" id="cursorFollower"></div>
 
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header" id="header" role="banner">
         <div class="header__inner">
             <a href="index.html" class="header__logo">
                 <svg class="logo__icon" viewBox="0 0 48 48" fill="none">
@@ -51,7 +128,7 @@
                 </div>
             </a>
 
-            <nav class="header__nav" id="nav">
+            <nav class="header__nav" id="nav" role="navigation" aria-label="Navegación principal">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#expertise" class="nav__link" data-text="Expertise">Expertise</a>
@@ -117,7 +194,7 @@
     </div>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" aria-label="Presentación principal">
         <div class="hero__bg">
             <div class="hero__image"></div>
             <div class="hero__gradient"></div>
@@ -142,7 +219,7 @@
 
             <div class="hero__bottom">
                 <p class="hero__description">
-                    
+                    Diseño, instalación y control técnico en geosintéticos para proyectos exigentes en el Perú.
                 </p>
 
                 <div class="hero__ctas">
@@ -657,7 +734,7 @@ Cada junta es soldada, ensayada y registrada por cuadrillas certificadas bajo pr
     </section>
 
     <!-- Contacto -->
-    <section class="contact" id="contacto">
+    <section class="contact" id="contacto" aria-label="Formulario de contacto">
         <div class="container">
             <div class="contact__grid">
                 <div class="contact__info">
@@ -774,7 +851,7 @@ Cada junta es soldada, ensayada y registrada por cuadrillas certificadas bajo pr
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer__main">
                 <div class="footer__brand">
